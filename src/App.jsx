@@ -162,7 +162,7 @@ export default function App() {
           The northernmost fourteener in Colorado, Longs Peak is the only 14er in Rocky Mountain National Park. The Keyhole Route covers 15 miles round trip with 5,100 ft of gain. The first 6 miles are non-technical — a sustained grind through Goblins Forest to the Boulder Field at 12,700 ft. Above the Keyhole, a dramatic notch at 13,150 ft, the route turns to exposed Class 3 scrambling: across the Ledges, up the 600-ft Trough, along the narrow Narrows catwalk, and finally up the Homestretch slabs to the flat, football-field summit.
         </p>
         <p style={{ fontSize: 15, lineHeight: 1.65, color: "#2d3a32", marginBottom: 20 }}>
-          Route markers are painted bullseyes above the Keyhole. Afternoon thunderstorms are the primary hazard — most parties start at 2–3 AM to summit by 9–10 AM. Approximately 70 people have died on this route since 1915. It demands respect.
+          Route markers are painted bullseyes above the Keyhole. Afternoon thunderstorms are the primary hazard — most parties start at 2–3 AM to summit by 9–10 AM. Approximately 70 people have died on this route since 1915 (roughly 15,000 people attempt per year). It demands respect.
         </p>
 
         {/* Stats */}
