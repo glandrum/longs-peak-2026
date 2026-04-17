@@ -223,7 +223,7 @@ export default function App() {
               <span style={{ ...mono, fontSize: 18, fontWeight: 600 }}>~$690</span>
             </div>
           </div>
-          <a href="https://www.google.com/travel/flights/booking?tfs=CBwQAhpFEgoyMDI2LTA5LTEyIiAKA0RBTBIKMjAyNi0wOS0xMhoDREVOKgJXTjIEMTI2OWoMCAISCC9tLzBmMnJxcgcIARIDREVOGkUSCjIwMjYtMDktMTMiIAoDREVOEgoyMDI2LTA5LTEzGgNEQUwqAldOMgQxNDg2agcIARIDREVOcgwIAhIIL20vMGYycnFAAUgBcAGCAQsI____________AZgBAQ&tfu=CmxDalJJZFVOZmNWSkhPR2hrY0hkQlFuZzNVVkZDUnkwdExTMHRMUzB0TFc5NVlYVXlNMEZCUVVGQlIyNW9hRVl3U0ZsS2JIbEJFZ1pYVGpFME9EWWFDd2lRMVFFUUFob0RWVk5FT0J4d2tOVUISAggAIgYKATAKATE&tcfs=UgRgAXgB" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.google.com/travel/flights/booking?tfs=CBwQAhpFEgoyMDI2LTA5LTA1IiAKA0RBTBIKMjAyNi0wOS0wNRoDREVOKgJXTjIEMTI2OWoMCAISCC9tLzBmMnJxcgcIARIDREVOGkUSCjIwMjYtMDktMDYiIAoDREVOEgoyMDI2LTA5LTA2GgNEQUwqAldOMgQxNDg2agcIARIDREVOcgwIAhIIL20vMGYycnFAAUgBcAGCAQsI____________AZgBAQ&tfu=CmxDalJJZFRsV1dYTlVReko2TUVGQlIycGtaR2RDUnkwdExTMHRMUzB0TFc5NVlXSXhOMEZCUVVGQlIyNXBWR3gzU1ZNNVJrVkJFZ1pYVGpFME9EWWFDd2lJNEFFUUFob0RWVk5FT0J4d2lPQUISAggAIgYKATAKATE&tcfs=UgRgAXgB" target="_blank" rel="noopener noreferrer"
           style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 15, padding: 16, borderRadius: 2, border: `2px solid ${C.orange}`, background: C.dark, color: C.cream, marginBottom: 20 }}>
           <div>
             <div style={{ ...mono, fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", opacity: 0.6, marginBottom: 4 }}>Link to flight</div>
