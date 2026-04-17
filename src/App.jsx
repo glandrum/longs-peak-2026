@@ -24,7 +24,7 @@ const schedules = {
     { time: "PM", warn: false, title: "Pack gear bag", note: "Layers, headlamp w/ fresh batteries, helmet, poles — see gear list below" },
     { time: "PM", warn: false, title: "Verify all bookings", note: "SW flight, Stanley, rental car — confirmations in one place" },
     { time: "PM", warn: false, title: "Check extended weather forecast", note: "mountain-forecast.com + NOAA point forecast for Longs summit" },
-    { time: "PM", warn: true,  title: "Verify RMNP permit for September 5th", note: "recreation.gov — confirm Longs trailhead access rules" },
+    { time: "PM", warn: true,  title: "Verify RMNP permit for September 5th", note: "recreation.gov — needed for Bear Lake on Saturday" },
     { time: "PM", warn: false, title: "Share trip plan with someone at home", note: "Route, trailhead, expected summit time, when to call SAR" },
     { time: "PM", warn: false, title: "Charge everything", note: "Phone, headlamp, watch, inReach (if you have one)" },
     { time: "9 PM", warn: false, title: "Early to bed", note: "5:00 AM alarm for Love Field" },
