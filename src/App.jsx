@@ -14,9 +14,9 @@ function PhotoCard({ src, alt, caption }) {
 }
 
 const days = [
-  { id: "fri", label: "Fri", date: "21", title: "Prep", subtitle: "Dallas · Final Prep", color: "#3d5a4a" },
-  { id: "sat", label: "Sat", date: "22", title: "Fly & Acclimate", subtitle: "DAL → Estes Park · Altitude Prep", color: "#8c5a3c" },
-  { id: "sun", label: "Sun", date: "23", title: "Summit & Home", subtitle: "Longs Peak · 14,259 ft · 15 mi · 5,100 ft gain · Fly Home", color: "#6b4a8c" },
+  { id: "fri", label: "Fri", date: "4", title: "Prep", subtitle: "Dallas · Final Prep", color: "#3d5a4a" },
+  { id: "sat", label: "Sat", date: "5", title: "Fly & Acclimate", subtitle: "DAL → Estes Park · Altitude Prep", color: "#8c5a3c" },
+  { id: "sun", label: "Sun", date: "6", title: "Summit & Home", subtitle: "Longs Peak · 14,259 ft · 15 mi · 5,100 ft gain · Fly Home", color: "#6b4a8c" },
 ];
 
 const schedules = {
@@ -24,7 +24,7 @@ const schedules = {
     { time: "PM", warn: false, title: "Pack gear bag", note: "Layers, headlamp w/ fresh batteries, helmet, poles — see gear list below" },
     { time: "PM", warn: false, title: "Verify all bookings", note: "SW flight, Stanley, rental car — confirmations in one place" },
     { time: "PM", warn: false, title: "Check extended weather forecast", note: "mountain-forecast.com + NOAA point forecast for Longs summit" },
-    { time: "PM", warn: true,  title: "Verify RMNP permit for Aug 22", note: "recreation.gov — confirm Longs trailhead access rules" },
+    { time: "PM", warn: true,  title: "Verify RMNP permit for September 5th", note: "recreation.gov — confirm Longs trailhead access rules" },
     { time: "PM", warn: false, title: "Share trip plan with someone at home", note: "Route, trailhead, expected summit time, when to call SAR" },
     { time: "PM", warn: false, title: "Charge everything", note: "Phone, headlamp, watch, inReach (if you have one)" },
     { time: "9 PM", warn: false, title: "Early to bed", note: "5:00 AM alarm for Love Field" },
@@ -82,10 +82,10 @@ const gear = [
 ];
 
 const costs = [
-  { item: "SW flight DAL ↔ DEN",          value: "$285" },
-  { item: "Rental car (2 days, per person)",value: "$60–80" },
-  { item: "Fuel (~250 mi)",                value: "$35" },
-  { item: "Stanley · Sat night",           value: "~$230" },
+  { item: "SW flight DAL ↔ DEN",          value: "$280" },
+  { item: "Rental car (2 days, per person)",value: "$70" },
+  { item: "Fuel (~250 mi)",                value: "$25" },
+  { item: "Stanley · Sat night (1 night, per person)",           value: "~$280" },
   { item: "RMNP entry (7-day)",            value: "$35" },
 ];
 
@@ -146,7 +146,7 @@ export default function App() {
           <div style={{ ...display, fontSize: 52, fontWeight: 800, lineHeight: 0.95, marginBottom: 6 }}>Longs Peak</div>
           <div style={{ ...display, fontSize: 22, fontWeight: 400, fontStyle: "italic", opacity: 0.8, marginBottom: 20 }}>via the Keyhole Route</div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "0 24px" }}>
-            {["Aug 21–23, 2026", "14,259 ft", "Class 3"].map(t => (
+            {["Sep 4–6, 2026", "14,259 ft", "Class 3"].map(t => (
               <span key={t} style={{ ...mono, fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", opacity: 0.8 }}>{t}</span>
             ))}
           </div>
@@ -199,9 +199,18 @@ export default function App() {
             ))}
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "12px 16px", background: C.dark, color: C.cream }}>
               <span style={{ ...display, fontSize: 18, fontWeight: 700 }}>Total</span>
-              <span style={{ ...mono, fontSize: 18, fontWeight: 600 }}>$645–$665</span>
+              <span style={{ ...mono, fontSize: 18, fontWeight: 600 }}>~$690</span>
             </div>
           </div>
+          <a href="https://www.google.com/travel/flights/booking?tfs=CBwQAhpFEgoyMDI2LTA5LTEyIiAKA0RBTBIKMjAyNi0wOS0xMhoDREVOKgJXTjIEMTI2OWoMCAISCC9tLzBmMnJxcgcIARIDREVOGkUSCjIwMjYtMDktMTMiIAoDREVOEgoyMDI2LTA5LTEzGgNEQUwqAldOMgQxNDg2agcIARIDREVOcgwIAhIIL20vMGYycnFAAUgBcAGCAQsI____________AZgBAQ&tfu=CmxDalJJZFVOZmNWSkhPR2hrY0hkQlFuZzNVVkZDUnkwdExTMHRMUzB0TFc5NVlYVXlNMEZCUVVGQlIyNW9hRVl3U0ZsS2JIbEJFZ1pYVGpFME9EWWFDd2lRMVFFUUFob0RWVk5FT0J4d2tOVUISAggAIgYKATAKATE&tcfs=UgRgAXgB" target="_blank" rel="noopener noreferrer"
+          style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 15, padding: 16, borderRadius: 2, border: `2px solid ${C.orange}`, background: C.dark, color: C.cream, marginBottom: 20 }}>
+          <div>
+            <div style={{ ...mono, fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", opacity: 0.6, marginBottom: 4 }}>Link to flight</div>
+            <div style={{ ...display, fontSize: 18, fontWeight: 600 }}>DAL (Love Field on Southwest) to DEN</div>
+            <div style={{ ...mono, fontSize: 11, opacity: 0.7, marginTop: 2 }}>Google Flights</div>
+          </div>
+          <ExternalLink size={18} color={C.orange} />
+        </a>
         </div>
       </div>
 
@@ -310,7 +319,7 @@ export default function App() {
                 <div style={{ ...display, fontSize: 24, fontWeight: 700, marginBottom: 12 }}>Bear Lake Loop</div>
                 <PhotoCard src={BEAR_LAKE_PHOTO} alt="Bear Lake, RMNP" caption="Bear Lake · RMNP · 9,475 ft · © Wikimedia Commons CC BY-SA" />
                 <p style={{ fontSize: 14, lineHeight: 1.65, color: "#2d3a32", marginBottom: 12 }}>
-                  Bear Lake is the ideal Saturday afternoon stop — easy, high-altitude, and genuinely beautiful. The lake sits at 9,475 ft inside RMNP, about 25 minutes from the Stanley. The loop trail is just 0.8 miles and completely flat, making it perfect for light acclimatization without burning legs you'll need tomorrow. On a clear August afternoon the reflection of Hallett Peak and Flattop Mountain off the water is one of the better views in the park.
+                  Bear Lake is the ideal Saturday afternoon stop — easy, high-altitude, and genuinely beautiful. The lake sits at 9,475 ft inside RMNP, about 25 minutes from the Stanley. The loop trail is just 0.8 miles and completely flat, making it perfect for light acclimatization without burning legs you'll need tomorrow. On a clear September afternoon the reflection of Hallett Peak and Flattop Mountain off the water is one of the better views in the park.
                 </p>
                 <p style={{ fontSize: 14, lineHeight: 1.65, color: "#2d3a32", marginBottom: 12 }}>
                   If you have energy to spare, the Nymph Lake extension adds 0.9 miles and 225 ft of gain to a quiet alpine lake surrounded by lily pads. From Nymph you can see Longs Peak looming to the south — worth a few minutes to take it in before tomorrow.
