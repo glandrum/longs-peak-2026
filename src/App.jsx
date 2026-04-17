@@ -187,6 +187,27 @@ export default function App() {
           <ExternalLink size={18} color={C.orange} />
         </a>
 
+        {/* 14ers link */}
+        <a href="https://www.youtube.com/watch?v=9jnvPvE-1H4" target="_blank" rel="noopener noreferrer"
+          style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: 16, borderRadius: 2, border: `2px solid ${C.orange}`, background: C.dark, color: C.cream, marginBottom: 20 }}>
+          <div>
+            <div style={{ ...mono, fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", opacity: 0.6, marginBottom: 4 }}>Long's Peak Flyover</div>
+            <div style={{ ...display, fontSize: 18, fontWeight: 600 }}>Drone Fly Over</div>
+            <div style={{ ...mono, fontSize: 11, opacity: 0.7, marginTop: 2 }}>Keyhole Route</div>
+          </div>
+          <ExternalLink size={18} color={C.orange} />
+        </a>
+
+        {/* 14ers link */}
+        <a href="https://www.youtube.com/watch?v=HLEzrTDR_To" target="_blank" rel="noopener noreferrer"
+          style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: 16, borderRadius: 2, border: `2px solid ${C.orange}`, background: C.dark, color: C.cream, marginBottom: 20 }}>
+          <div>
+            <div style={{ ...mono, fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", opacity: 0.6, marginBottom: 4 }}>Quick Route Walkthrough</div>
+            <div style={{ ...display, fontSize: 18, fontWeight: 600 }}>2 Minute Walkthrough VLOG</div>
+            <div style={{ ...mono, fontSize: 11, opacity: 0.7, marginTop: 2 }}>Keyhole Route</div>
+          </div>
+          <ExternalLink size={18} color={C.orange} />
+        </a>
         {/* BUDGET */}
         <div style={{ marginBottom: 8 }}>
           <div style={{ ...display, fontSize: 24, fontWeight: 700, marginBottom: 12 }}>Budget</div>
